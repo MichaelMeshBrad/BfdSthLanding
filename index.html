@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bfd Sth DLV Team Dashboard</title>
+<style>
+  body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #F2F5F7;
+    color: #004080;
+    scroll-behavior: smooth;
+  }
+
+  /* --- Sticky Navbar --- */
+  nav {
+    position: sticky;
+    top: 0;
+    background: #004080;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px 0;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px 15px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    transition: background 0.2s;
+  }
+
+  nav a:hover {
+    background: #FFD100;
+    color: #004080;
+  }
+
+  header {
+    background: #004080;
+    color: white;
+    text-align: center;
+    padding: 25px 10px;
+  }
+
+  header img {
+    max-height: 100px;
+    margin-bottom: 5px;
+  }
+
+  h1 {
+    margin: 5px 0 0 0;
+    font-size: 2em;
+  }
+
+  section {
+    padding: 25px 20px;
+  }
+
+  section h2 {
+    color: #004080;
+    border-bottom: 3px solid #FFD100;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+  }
+
+  .card {
+    background: #FFFFFF;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    text-align: center;
+    text-decoration: none;
+    color: #004080;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s, box-shadow 0.2s, background 0.2s, border 0.2s;
+  }
+
+  .card svg {
+    width: 36px;
+    height: 36px;
+    margin-bottom: 10px;
+    fill: #004080;
+    transition: fill 0.2s;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    background: #e6f0ff;
+    border: 2px solid #FFD100;
+  }
+
+  .card:hover svg {
+    fill: #FFD100;
+  }
+
+  footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+    background: #004080;
+    color: white;
+  }
+
+  @media (max-width: 500px) {
+    header h1 { font-size: 1.5em; }
+    section h2 { font-size: 1.2em; }
+    nav a { margin: 5px 8px; padding: 5px 8px; font-size: 0.9em; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#membership">Membership</a>
+  <a href="#tools">Tools</a>
+  <a href="#district">District</a>
+  <a href="#guides">Guides</a>
+</nav>
+
+<header>
+  <img src="logo.png" alt="Scout Logo">
+  <h1>Bfd Sth DLV Team Quick Links</h1>
+</header>
+
+<!-- Membership Section -->
+<section id="membership">
+  <h2>Membership & Learning</h2>
+  <div class="grid">
+    <a class="card" href="https://membership.scouts.org.uk/" target="_blank">
+      <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4S14.21 4 12 4 8 5.79 8 8s1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+      Scouts My Membership
+    </a>
+    <a class="card" href="https://learn.scouts.org.uk/" target="_blank">
+      <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zm0 7L2 7v7l10 5 10-5V7l-10 2z"/></svg>
+      Scouts My Learning
+    </a>
+    <a class="card" href="https://thescouts.disclosures.co.uk/" target="_blank">
+      <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4V4H8v4c0 2.21 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+      Scouts Disclosures (Atlantic)
+    </a>
+  </div>
+</section>
+
+<!-- Tools Section -->
+<section id="tools">
+  <h2>Tools & Management</h2>
+  <div class="grid">
+    <a class="card" href="https://www.onlinescoutmanager.co.uk/login.php" target="_blank">
+      <svg viewBox="0 0 24 24"><path d="M3 6h18v2H3zM3 12h18v2H3zM3 18h18v2H3z"/></svg>
+      Online Scout Manager
+    </a>
+    <a class="card" href="https://bfdsthscouts.sharepoint.com/" target="_blank">
+      <svg viewBox="0 0 24 24"><path d="M3 3h18v18H3z"/></svg>
+      M365 - District Sharepoint
+    </a>
+  </div>
+</section>
+
+<!-- District Section -->
+<section id="district">
+  <h2>Resources & District</h2>
+  <div class="grid">
+    <a class="card" href="https://bradfordsouthscouts.org.uk/" target="_blank">
+      <svg viewBox="0 0 24 24"><path d="M12 2l10 20H2z"/></svg>
+      District Website
+    </a>
+    <a class="card" href="https://bfdsthscouts.freshdesk.com/" target="_blank">
+      <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z"/></svg>
+      District Support Site
+    </a>
+    <a class="card" href="https://www.scouts.org.uk/" target="_blank">
+      <svg viewBox="0 0 24 24"><path d="M12 0l3 7h7l-5.5 4.5 2 7L12 14l-6.5 4-2-7L1 7h7z"/></svg>
+      UK Scouts
+    </a>
+  </div>
+</section>
+
+<!-- Guides & Branding Section -->
+<section id="guides">
+  <h2>Guides & Branding</h2>
+  <div class="grid">
+    <a class="card" href="https://scoutsbrand.org.uk/" target="_blank">
+      <svg viewBox="0 0 24 24"><path d="M12 2L2 12h20z"/></svg>
+      Scouts Brand Centre
+    </a>
+    <a class="card" href="https://www.scouts.org.uk/por/" target="_blank">
+      <svg viewBox="0 0 24 24"><path d="M3 3h18v2H3zM3 7h18v2H3zM3 11h18v2H3zM3 15h18v2H3zM3 19h18v2H3z"/></svg>
+      POR (Policy, Organisation & Rules)
+    </a>
+  </div>
+</section>
+
+<footer>
+  &copy; 2026 Bfd Sth DLV Dashboard
+</footer>
+
+</body>
+</html>
